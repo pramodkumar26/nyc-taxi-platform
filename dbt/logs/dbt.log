@@ -1,0 +1,30 @@
+[0m05:57:49.363664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B11A0DDB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B12CFC310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B12CFC100>]}
+
+
+============================== 05:57:49.368326 | ee9001a9-fe12-4983-8c16-ec029d7e3b87 ==============================
+[0m05:57:49.368326 [info ] [MainThread]: Running with dbt=1.11.11
+[0m05:57:49.369332 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\pramo\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init nyc_taxi', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m05:57:49.782510 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\pramo\.dbt
+[0m05:57:49.785502 [debug] [MainThread]: Starter project path: C:\Users\pramo\.conda\envs\projects\lib\site-packages\dbt\include\starter_project
+[0m05:57:49.914757 [info ] [MainThread]: 
+Your new dbt project "nyc_taxi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m05:57:49.915996 [info ] [MainThread]: Setting up your profile.
+[0m05:59:31.914843 [info ] [MainThread]: Profile nyc_taxi written to C:\Users\pramo\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m05:59:31.922880 [debug] [MainThread]: Command `dbt init` succeeded at 05:59:31.922880 after 102.73 seconds
+[0m05:59:31.925227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B11A0DDB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B12CFD060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B12CFD480>]}
+[0m05:59:31.927754 [debug] [MainThread]: Flushing usage events
+[0m05:59:32.244988 [debug] [MainThread]: An error was encountered while trying to flush usage events

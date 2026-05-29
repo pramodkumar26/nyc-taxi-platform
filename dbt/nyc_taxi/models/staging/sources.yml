@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: nyc-taxi-platform-2026
+    schema: raw
+    tables:
+      - name: tlc_yellow_trips_2022
+        description: "NYC Yellow Taxi trip records for 2022"
