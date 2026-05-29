@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: int_trips_enriched
+    description: "Enriched trips with duration calculated and outliers removed"
+    columns:
+      - name: trip_date
+        description: "Date extracted from pickup_datetime"
+        tests:
+          - not_null
+
+      - name: trip_duration_minutes
+        description: "Trip duration in minutes, filtered between 1 and 180"
+        tests:
+          - not_null
+
+      - name: total_amount
+        description: "Total charge for the trip"
+        tests:
+          - not_null
+
+      - name: pickup_location_id
+        description: "TLC taxi zone ID for pickup"
+        tests:
+          - not_null

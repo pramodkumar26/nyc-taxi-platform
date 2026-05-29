@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: mart_trips_daily
+    description: "Daily aggregated trip metrics across all zones"
+    columns:
+      - name: trip_date
+        description: "The date of the trips"
+        tests:
+          - not_null
+          - unique
+
+      - name: total_trips
+        description: "Total number of trips on that day"
+        tests:
+          - not_null
+
+      - name: total_revenue
+        description: "Sum of total_amount for all trips on that day"
+        tests:
+          - not_null
+
+  - name: mart_trips_by_zone
+    description: "Daily trip metrics grouped by pickup zone"
+    columns:
+      - name: trip_date
+        description: "The date of the trips"
+        tests:
+          - not_null
+
+      - name: pickup_location_id
+        description: "TLC taxi zone ID"
+        tests:
+          - not_null
+
+      - name: total_trips
+        description: "Total trips from this zone on this day"
+        tests:
+          - not_null

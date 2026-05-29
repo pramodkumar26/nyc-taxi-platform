@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: stg_yellow_trips
+    description: "Cleaned and cast staging layer for NYC yellow taxi trips"
+    columns:
+      - name: pickup_datetime
+        description: "Trip pickup timestamp"
+        tests:
+          - not_null
+
+      - name: dropoff_datetime
+        description: "Trip dropoff timestamp"
+        tests:
+          - not_null
+
+      - name: trip_distance
+        description: "Trip distance in miles"
+        tests:
+          - not_null
+
+      - name: fare_amount
+        description: "Base fare amount in dollars"
+        tests:
+          - not_null
+
+      - name: total_amount
+        description: "Total charge including fees and tips"
+        tests:
+          - not_null
+
+      - name: pickup_location_id
+        description: "TLC taxi zone ID for pickup location"
+        tests:
+          - not_null
+
+      - name: dropoff_location_id
+        description: "TLC taxi zone ID for dropoff location"
+        tests:
+          - not_null
+
+      - name: payment_type
+        description: "Payment method: 1=credit card, 2=cash, 3=no charge, 4=dispute"
+        tests:
+          - accepted_values:
+              values: ['1', '2', '3', '4', '5', '6']
