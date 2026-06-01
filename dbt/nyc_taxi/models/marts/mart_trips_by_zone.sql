@@ -4,6 +4,7 @@ with trips as (
 
 select
     trip_date,
+    timestamp(trip_date) as trip_timestamp,
     pickup_location_id,
     count(*) as total_trips,
     round(sum(total_amount), 2) as total_revenue,

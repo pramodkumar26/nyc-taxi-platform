@@ -1,0 +1,10 @@
+project: nyc_taxi_features
+registry: registry.db
+provider: gcp
+offline_store:
+  type: bigquery
+  dataset: feast_offline
+online_store:
+  type: sqlite
+  path: online_store.db
+entity_key_serialization_version: 2
